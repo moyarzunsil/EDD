@@ -13202,8 +13202,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Recursi&#243;n-y-Backtracking">Recursi&#243;n y Backtracking<a class="anchor-link" href="#Recursi&#243;n-y-Backtracking">&#182;</a></h1><p><br><br><br><br><br><br><br><br></p>
-<h3 id="Mauricio-Oyarz&#250;n-Silva,-Estructura-de-Datos,-2020-01">Mauricio Oyarz&#250;n Silva, Estructura de Datos, 2020-01<a class="anchor-link" href="#Mauricio-Oyarz&#250;n-Silva,-Estructura-de-Datos,-2020-01">&#182;</a></h3>
+<h1 id="Recursi&#243;n-y-Backtracking">Recursi&#243;n y Backtracking<a class="anchor-link" href="#Recursi&#243;n-y-Backtracking">&#182;</a></h1><h3 id="Mauricio-Oyarz&#250;n-Silva,-Estructura-de-Datos,-2020-01">Mauricio Oyarz&#250;n Silva, Estructura de Datos, 2020-01<a class="anchor-link" href="#Mauricio-Oyarz&#250;n-Silva,-Estructura-de-Datos,-2020-01">&#182;</a></h3>
 </div>
 </div>
 </div></section></section><section><section>
@@ -13231,14 +13230,6 @@ a.anchor-link {
 <hr>
 <blockquote><p>La <strong><em>Turing completitud</em></strong> hace referencia a aquellos lenguajes que pueden implementar cualquier máquina de Turing. También se le llama <em>Computabilidad Universal</em></p>
 </blockquote>
-<hr>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <blockquote><p>Si no sabe quien es <em>Alan Turing</em>, el padre de la computación moderna, le recomiendo ver la película <a href="https://www.imdb.com/title/tt2084970/" title="IMDB: The Imitation Game">The Imitation Game</a>.</p>
 </blockquote>
@@ -13296,21 +13287,21 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recursive_search</span><span class="p">(</span><span class="n">arreglo</span><span class="p">,</span> <span class="n">inf</span><span class="p">,</span> <span class="n">sup</span><span class="p">,</span> <span class="n">busc</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">inf</span> <span class="o">&gt;=</span> <span class="n">sup</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">inf</span> <span class="o">&gt;</span> <span class="n">sup</span><span class="p">:</span>
         <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
     
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Memoria en la función: </span><span class="si">%d</span><span class="s2"> KB&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">process</span><span class="o">.</span><span class="n">memory_info</span><span class="p">()</span><span class="o">.</span><span class="n">rss</span><span class="o">/</span><span class="mi">1024</span><span class="p">))</span>
     
-    <span class="n">middle</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">inf</span><span class="o">+</span><span class="n">sup</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">middle</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">inf</span> <span class="o">+</span> <span class="p">(</span><span class="n">sup</span><span class="o">-</span><span class="n">inf</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
     
     <span class="k">if</span> <span class="n">busc</span> <span class="o">&gt;</span> <span class="n">arreglo</span><span class="p">[</span><span class="n">middle</span><span class="p">]:</span>
-        <span class="n">recursive_search</span><span class="p">(</span><span class="n">arreglo</span><span class="p">,</span> <span class="n">middle</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">sup</span><span class="p">,</span> <span class="n">busc</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">recursive_search</span><span class="p">(</span><span class="n">arreglo</span><span class="p">,</span> <span class="n">middle</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">sup</span><span class="p">,</span> <span class="n">busc</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">busc</span> <span class="o">&lt;</span> <span class="n">arreglo</span><span class="p">[</span><span class="n">middle</span><span class="p">]:</span>
-        <span class="n">recursive_search</span><span class="p">(</span><span class="n">arreglo</span><span class="p">,</span><span class="n">inf</span><span class="p">,</span><span class="n">middle</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">busc</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">recursive_search</span><span class="p">(</span><span class="n">arreglo</span><span class="p">,</span><span class="n">inf</span><span class="p">,</span><span class="n">middle</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">busc</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">middle</span>
 </pre></div>
@@ -13329,11 +13320,11 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Memoria antes de ejecutar: </span><span class="si">%d</span><span class="s2"> KB&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">process</span><span class="o">.</span><span class="n">memory_info</span><span class="p">()</span><span class="o">.</span><span class="n">rss</span><span class="o">/</span><span class="mi">1024</span><span class="p">))</span>
-<span class="n">recursive_search</span><span class="p">(</span><span class="n">arreglo</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">arreglo</span><span class="p">),</span> <span class="mi">20</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">recursive_search</span><span class="p">(</span><span class="n">arreglo</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">arreglo</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Memoria despues de ejecutar: </span><span class="si">%d</span><span class="s2"> KB&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">process</span><span class="o">.</span><span class="n">memory_info</span><span class="p">()</span><span class="o">.</span><span class="n">rss</span><span class="o">/</span><span class="mi">1024</span><span class="p">))</span>
 </pre></div>
 
@@ -13351,17 +13342,21 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Memoria antes de ejecutar: 45812 KB
-Memoria en la función: 45812 KB
-Memoria en la función: 45812 KB
-Memoria en la función: 45812 KB
-Memoria en la función: 45812 KB
-Memoria en la función: 45812 KB
-Memoria en la función: 45812 KB
-Memoria en la función: 45812 KB
-Memoria en la función: 45812 KB
-Memoria en la función: 45812 KB
-Memoria despues de ejecutar: 45812 KB
+<pre>Memoria antes de ejecutar: 45872 KB
+Memoria en la función: 45872 KB
+Memoria en la función: 45872 KB
+Memoria en la función: 45872 KB
+Memoria en la función: 45872 KB
+Memoria en la función: 45872 KB
+Memoria en la función: 45872 KB
+Memoria en la función: 45872 KB
+Memoria en la función: 45872 KB
+Memoria en la función: 45872 KB
+Memoria en la función: 45872 KB
+Memoria en la función: 45872 KB
+Memoria en la función: 45876 KB
+10
+Memoria despues de ejecutar: 45884 KB
 </pre>
 </div>
 </div>
@@ -13369,7 +13364,142 @@ Memoria despues de ejecutar: 45812 KB
 </div>
 </div>
 
-</div></div></section></section>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Estructura-de-una-funci&#243;n-recursiva">Estructura de una funci&#243;n recursiva<a class="anchor-link" href="#Estructura-de-una-funci&#243;n-recursiva">&#182;</a></h3><p>Una función recursiva tiene 1 o más casos base, un caso base es aquel que se resuelve trivialmente sin tener que recurrir a llamar la función nuevamente.</p>
+<hr>
+<blockquote><p>Por ejemplo, el cálculo del número factorial se puede resolver de manera recursiva:
+$$5!=4!*5=3!*4*5=2!*3*4*5=1!*2*3*4*5=1*2*3*4*5$$
+En este caso, nuestro caso base es $1!$, pues su valor ya es previamente conocido.</p>
+</blockquote>
+<hr>
+<p>Además, una función recursiva tiene uno o más casos recursivos que llaman a la función alternado los parametros de entrada. En el ejemplo del cálculo del número factorial, cada vez que decrementamos el número, es una nueva llamada recursiva.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Estructuras-de-datos-recursivas">Estructuras de datos recursivas<a class="anchor-link" href="#Estructuras-de-datos-recursivas">&#182;</a></h3><p><img src="assets/clase_empleado.png" alt="image alt &lt;"></p>
+<p>Una estructura de datos recursiva, es aquella estructura que esta definida en función de si misma. Veamos un ejemplo con una clase simple. Si tenemos la <code>clase Empleado</code>, y nombramos a cargo a un supervisor, este supervisor es tan empleado como el resto, pero además ostenta una <em>jefatura</em>. De esta misma forma, veremos más adelante en este curso estructuras de datos que estan definidas en función de si mismas, como por ejemplo la <strong>lista enlazada</strong>, donde cada nodo tiene un valor y <em>apunta</em> al siguiente, que es una clase del mismo tipo.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Recursividad-simple-vs-m&#250;ltiple">Recursividad simple vs m&#250;ltiple<a class="anchor-link" href="#Recursividad-simple-vs-m&#250;ltiple">&#182;</a></h3><p>La <strong><em>recursividad simple</em></strong> es aquella que tiene solo un caso recursivo. Por ejemplo el cálculo del número <code>factorial</code>:</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    
+    <span class="k">return</span> <span class="n">n</span><span class="o">*</span><span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Recursividad-simple-vs-m&#250;ltiple">Recursividad simple vs m&#250;ltiple<a class="anchor-link" href="#Recursividad-simple-vs-m&#250;ltiple">&#182;</a></h3><p>La <strong><em>recursividad múltiple</em></strong> es aquella que tiene más de un caso recursivo. Ejemplo de esto vimos al principio de este <em>notebook</em> con la función <code>recursive_search()</code> , esta función en realidad se llama búsqueda binaria y es uno de los mejores algoritmos para buscar en arreglos ordenados.</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">arreglo</span><span class="p">,</span> <span class="n">inf</span><span class="p">,</span> <span class="n">sup</span><span class="p">,</span> <span class="n">busc</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">inf</span> <span class="o">&gt;</span> <span class="n">sup</span><span class="p">:</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+    
+    <span class="n">middle</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">inf</span> <span class="o">+</span> <span class="p">(</span><span class="n">sup</span><span class="o">-</span><span class="n">inf</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">busc</span> <span class="o">&gt;</span> <span class="n">arreglo</span><span class="p">[</span><span class="n">middle</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="n">recursive_search</span><span class="p">(</span><span class="n">arreglo</span><span class="p">,</span> <span class="n">middle</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">sup</span><span class="p">,</span> <span class="n">busc</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">busc</span> <span class="o">&lt;</span> <span class="n">arreglo</span><span class="p">[</span><span class="n">middle</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="n">recursive_search</span><span class="p">(</span><span class="n">arreglo</span><span class="p">,</span><span class="n">inf</span><span class="p">,</span><span class="n">middle</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">busc</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">middle</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Recursividad-indirecta">Recursividad indirecta<a class="anchor-link" href="#Recursividad-indirecta">&#182;</a></h3><p>Hasta el momento, hemos visto solo ejemplos de recursión directa, es decir, funciones que se llaman a sí mismas de forma directa. La recursividad indirecta implica dos o más funciones cíclicas que se llaman entre sí recursivamente. Como ejemplo, veremos el recorrido de una matriz a través de recursividad indirecta.</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">llenado_fila</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">10</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">mat</span>
+    
+    <span class="k">return</span> <span class="n">llenado_columna</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    
+<span class="k">def</span> <span class="nf">llenado_columna</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">j</span> <span class="o">==</span> <span class="mi">10</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">llenado_fila</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">((</span><span class="n">i</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span> <span class="o">+</span> <span class="n">j</span><span class="p">)</span>
+    <span class="n">mat</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span> <span class="o">+</span> <span class="n">j</span>
+    <span class="k">return</span> <span class="n">llenado_columna</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Estructura-de-una-funci&#243;n-recursiva">Estructura de una funci&#243;n recursiva<a class="anchor-link" href="#Estructura-de-una-funci&#243;n-recursiva">&#182;</a></h3><p><img src="assets/funcion_recursiva.png" alt="image alt &lt;"></p>
+<p>En general, podemos decir que la estructura de una función recursiva es:</p>
+<ul>
+<li>Establecer la o las condiciones de borde o término.</li>
+<li>Realizar el computo del cuerpo de la función.</li>
+<li>Establecer la o las condiciones de llamada recursiva.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Backtracking">Backtracking<a class="anchor-link" href="#Backtracking">&#182;</a></h2>
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 
