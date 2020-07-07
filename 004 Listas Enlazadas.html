@@ -13202,13 +13202,13 @@ Country: US
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Ejemplo-de-clase-nodo-en-Python">Ejemplo de clase nodo en Python<a class="anchor-link" href="#Ejemplo-de-clase-nodo-en-Python">&#182;</a></h4>
+<h4 id="Ejemplo-de-clase-nodo-para-una-lista-enlazada-simple-en-Python">Ejemplo de clase nodo para una lista enlazada simple en Python<a class="anchor-link" href="#Ejemplo-de-clase-nodo-para-una-lista-enlazada-simple-en-Python">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">nodo</span><span class="p">:</span>
@@ -13246,13 +13246,13 @@ Country: US
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Ejemplo-de-uso-de-la-clase-nodo">Ejemplo de uso de la clase nodo<a class="anchor-link" href="#Ejemplo-de-uso-de-la-clase-nodo">&#182;</a></h4>
+<h4 id="Ejemplo-de-uso-de-la-clase-nodo-de-una-lista-enlazada-simple">Ejemplo de uso de la clase nodo de una lista enlazada simple<a class="anchor-link" href="#Ejemplo-de-uso-de-la-clase-nodo-de-una-lista-enlazada-simple">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># construcción y llenado de la lista</span>
@@ -13297,7 +13297,7 @@ Country: US
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Lista-enlazada-simple-con-el-nodo-centinela-fuera-de-la-lista">Lista enlazada simple con el nodo centinela fuera de la lista<a class="anchor-link" href="#Lista-enlazada-simple-con-el-nodo-centinela-fuera-de-la-lista">&#182;</a></h3><p>Cuando hablamos de una lista enlazada simple con el <em>nodo</em> sentinela fuera de la lista, nos referimos a una estrucutra donde el <em>nodo centinela</em> es de una clase distinta a la <code>clase nodo</code>. En este caso implementamos una <code>clase lista_enlazada</code> que en su forma más rudimentaria guarda tres referencias, una al inicio de la lista (<em>first</em>), una al final de la lista (<em>last</em>) y una referencia auxiliar que se utiliza como referencia movil dentro de la lista (<em>curr</em>). Opcionalmente se pueden agregar parámetros, como por ejemplo, la cantidad de elementos en la lista, que nos otorgan mayor comodidad al momento de realizar ciertas verificaciones.</p>
+<h3 id="Lista-enlazada-simple-con-el-nodo-centinela-fuera-de-la-lista">Lista enlazada simple con el nodo centinela fuera de la lista<a class="anchor-link" href="#Lista-enlazada-simple-con-el-nodo-centinela-fuera-de-la-lista">&#182;</a></h3><p>Cuando hablamos de una lista enlazada simple con el <em>nodo</em> centinela fuera de la lista, nos referimos a una estrucutra donde el <em>nodo centinela</em> es de una clase distinta a la <code>clase nodo</code>. En este caso implementamos una <code>clase lista_enlazada</code> que en su forma más rudimentaria guarda tres referencias, una al inicio de la lista (<em>first</em>), una al final de la lista (<em>last</em>) y una referencia auxiliar que se utiliza como referencia movil dentro de la lista (<em>curr</em>). Opcionalmente se pueden agregar parámetros, como por ejemplo, la cantidad de elementos en la lista, que nos otorgan mayor comodidad al momento de realizar ciertas verificaciones.</p>
 
 </div>
 </div>
@@ -13395,14 +13395,13 @@ Country: US
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>&lt;div style=”page-break-after: always;”&gt;&lt;/div&gt;</p>
-<h4 id="Ejemplo-de-clase-lista_enlazada-en-Python">Ejemplo de clase lista_enlazada en Python<a class="anchor-link" href="#Ejemplo-de-clase-lista_enlazada-en-Python">&#182;</a></h4>
+<h4 id="Ejemplo-de-la-clase-lista_enlazada-implementando-el-nodo-centinela-fuera-de-la-lista-en-Python">Ejemplo de la clase lista_enlazada implementando el nodo centinela fuera de la lista en Python<a class="anchor-link" href="#Ejemplo-de-la-clase-lista_enlazada-implementando-el-nodo-centinela-fuera-de-la-lista-en-Python">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">lista_enlazada</span><span class="p">:</span>
@@ -13437,8 +13436,9 @@ Country: US
     
     <span class="c1"># ejemplo de uso de la referencia curr sobrecargando []</span>
     <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">index</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_elem</span><span class="p">):</span>
-            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">if</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">type</span><span class="p">(</span><span class="nb">int</span><span class="p">())):</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Index must be integer.&quot;</span><span class="p">)</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_elem</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Index out of range.&quot;</span><span class="p">)</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Index must be positive or zero.&quot;</span><span class="p">)</span>
         
         <span class="bp">self</span><span class="o">.</span><span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">first</span>
         <span class="n">curr_idx</span> <span class="o">=</span> <span class="mi">0</span>
@@ -13460,14 +13460,13 @@ Country: US
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>&lt;div style=”page-break-after: always;”&gt;&lt;/div&gt;</p>
 <h4 id="Ejemplo-de-uso-de-clase-lista_enlazada-en-Python">Ejemplo de uso de clase lista_enlazada en Python<a class="anchor-link" href="#Ejemplo-de-uso-de-clase-lista_enlazada-en-Python">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># construcción y llenado de la lista</span>
@@ -13486,8 +13485,10 @@ Country: US
 
 <span class="c1"># uso del método sobrecargado []</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">head</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">head</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="c1"># fuera de rango</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">head</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># índice inválido</span>
+<span class="c1">#testeando casos de borde</span>
+<span class="c1">#print(head[5]) # fuera de rango</span>
+<span class="c1">#print(head[-1]) # índice inválido</span>
+<span class="c1">#print(head[&#39;a&#39;]) # índice no numérico</span>
 </pre></div>
 
     </div>
@@ -13507,8 +13508,6 @@ Country: US
 <pre>(d1)-&gt;(d2)-&gt;(d3)-&gt;(d4)-&gt;(d5)-&gt;(d6)-&gt;(None)
 (d1)-&gt;(d2)-&gt;(d3)-&gt;(d5)-&gt;(d6)-&gt;(None)
 d3
-None
-None
 </pre>
 </div>
 </div>
@@ -13516,6 +13515,392 @@ None
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Listas-Doblemente-Enlazadas-y-Listas-Circulares">Listas Doblemente Enlazadas y Listas Circulares<a class="anchor-link" href="#Listas-Doblemente-Enlazadas-y-Listas-Circulares">&#182;</a></h2><p>Una lista doblemente enlazada es aquella en el que cada nodo tiene una refencia no solo al siguiente elemento, sino también al anterior. Esto le otorga a la lista una gran flexibilidad, pues nos permite no solo avanzar sino tambien retroceder dentro de la lista (es bidireccional) para lo cual debemos pagar un costo en espacio (tenemos una referencia mas por nodo).
+Cuando hablamos de una lista doblemente enlazada con el <em>nodo</em> centinela fuera de la lista, nos referimos a una estrutura donde el <em>nodo centinela</em> es de una clase distinta a la <code>clase nodo</code>. Para este nuevo tipo de lista la <code>clase nodo</code> es implementada agregando una segunda referencia recursiva (<em>ant</em>), a este nuevo nodo lo denominaremos <code>clase nodo2e</code>. La implementación de la <code>clase lista_enlazada2e</code> es análoga a la clase centinela implementada anteriormente la cual contaba con: una referencia al inicio de la lista (<em>first</em>), una referencia al final de la lista (<em>last</em>) y una referencia auxiliar que se utiliza como referencia movil dentro de la lista (<em>curr</em>).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"> </div>
+
+
+<div class="output_svg output_subarea output_execute_result">
+<svg contentScriptType="application/ecmascript" contentStyleType="text/css" height="461px" preserveAspectRatio="none" style="width:632px;height:461px;" version="1.1" viewBox="0 0 632 461" width="632px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"><defs><filter height="300%" id="f1ewktrogkzgmw" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[51e70d792dc675067168860b125cbfb6]
+class lista_enlazada2e--><rect fill="#FEFECE" filter="url(#f1ewktrogkzgmw)" height="150.4375" id="lista_enlazada2e" style="stroke: #A80036; stroke-width: 1.5;" width="132" x="7" y="7"/><ellipse cx="22" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M24.3438,18.6719 C23.4063,18.2344 22.8125,18.0938 21.9375,18.0938 C19.3125,18.0938 17.3125,20.1719 17.3125,22.8906 L17.3125,24.0156 C17.3125,26.5938 19.4219,28.4844 22.3125,28.4844 C23.5313,28.4844 24.6875,28.1875 25.4375,27.6406 C26.0156,27.2344 26.3438,26.7813 26.3438,26.3906 C26.3438,25.9375 25.9531,25.5469 25.4844,25.5469 C25.2656,25.5469 25.0625,25.625 24.875,25.8125 C24.4219,26.2969 24.4219,26.2969 24.2344,26.3906 C23.8125,26.6563 23.125,26.7813 22.3594,26.7813 C20.3125,26.7813 19.0156,25.6875 19.0156,23.9844 L19.0156,22.8906 C19.0156,21.1094 20.2656,19.7969 22,19.7969 C22.5781,19.7969 23.1875,19.9531 23.6563,20.2031 C24.1406,20.4844 24.3125,20.7031 24.4063,21.1094 C24.4688,21.5156 24.5,21.6406 24.6406,21.7656 C24.7813,21.9063 25.0156,22.0156 25.2344,22.0156 C25.5,22.0156 25.7656,21.875 25.9375,21.6563 C26.0469,21.5 26.0781,21.3125 26.0781,20.8906 L26.0781,19.4688 C26.0781,19.0313 26.0625,18.9063 25.9688,18.75 C25.8125,18.4844 25.5313,18.3438 25.2344,18.3438 C24.9375,18.3438 24.7344,18.4375 24.5156,18.75 L24.3438,18.6719 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="100" x="36" y="27.1543">lista_enlazada2e</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="138" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="13" y="53.2104">first:nodo</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="13" y="66.0151">last:nodo</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="13" y="78.8198">curr:nodo</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78" x="13" y="91.6245">num_elem:int</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="138" y1="98.2188" y2="98.2188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="13" y="112.4292">add(nodo)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="13" y="125.2339">__str__()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="13" y="138.0386">borrar(int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91" x="13" y="150.8433">__getitem__(int)</text><!--MD5=[5a56dc655ce1fc32a35a5d21a7a3353e]
+class nodo2e--><rect fill="#FEFECE" filter="url(#f1ewktrogkzgmw)" height="137.6328" id="nodo2e" style="stroke: #A80036; stroke-width: 1.5;" width="79" x="200.5" y="13"/><ellipse cx="215.5" cy="29" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M217.8438,24.6719 C216.9063,24.2344 216.3125,24.0938 215.4375,24.0938 C212.8125,24.0938 210.8125,26.1719 210.8125,28.8906 L210.8125,30.0156 C210.8125,32.5938 212.9219,34.4844 215.8125,34.4844 C217.0313,34.4844 218.1875,34.1875 218.9375,33.6406 C219.5156,33.2344 219.8438,32.7813 219.8438,32.3906 C219.8438,31.9375 219.4531,31.5469 218.9844,31.5469 C218.7656,31.5469 218.5625,31.625 218.375,31.8125 C217.9219,32.2969 217.9219,32.2969 217.7344,32.3906 C217.3125,32.6563 216.625,32.7813 215.8594,32.7813 C213.8125,32.7813 212.5156,31.6875 212.5156,29.9844 L212.5156,28.8906 C212.5156,27.1094 213.7656,25.7969 215.5,25.7969 C216.0781,25.7969 216.6875,25.9531 217.1563,26.2031 C217.6406,26.4844 217.8125,26.7031 217.9063,27.1094 C217.9688,27.5156 218,27.6406 218.1406,27.7656 C218.2813,27.9063 218.5156,28.0156 218.7344,28.0156 C219,28.0156 219.2656,27.875 219.4375,27.6563 C219.5469,27.5 219.5781,27.3125 219.5781,26.8906 L219.5781,25.4688 C219.5781,25.0313 219.5625,24.9063 219.4688,24.75 C219.3125,24.4844 219.0313,24.3438 218.7344,24.3438 C218.4375,24.3438 218.2344,24.4375 218.0156,24.75 L217.8438,24.6719 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="47" x="229.5" y="33.1543">nodo2e</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="201.5" x2="278.5" y1="45" y2="45"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="206.5" y="59.2104">dato : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="206.5" y="72.0151">sig : nodo</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="206.5" y="84.8198">ant : nodo</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="201.5" x2="278.5" y1="91.4141" y2="91.4141"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="206.5" y="105.6245">nodo(int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="206.5" y="118.4292">add(nodo)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="206.5" y="131.2339">__str__()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="206.5" y="144.0386">borrar(int)</text><rect fill="#FEFECE" filter="url(#f1ewktrogkzgmw)" height="33.9688" style="stroke: #A80036; stroke-width: 1.5;" width="172" x="378" y="65"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="158" x="385" y="78.1387">centinela:lista_enlazada2e</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="379" x2="549" y1="82.9688" y2="82.9688"/><rect fill="#FEFECE" filter="url(#f1ewktrogkzgmw)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="103" x="24.5" y="312"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="89" x="31.5" y="325.1387">nodo1:nodo2e</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="25.5" x2="126.5" y1="329.9688" y2="329.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="46" x="30.5" y="343.251">dato = 1</text><rect fill="#FEFECE" filter="url(#f1ewktrogkzgmw)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="104" x="185" y="312"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="192" y="325.1387">nodo2:nodo2e</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="186" x2="288" y1="329.9688" y2="329.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="45" x="191" y="343.251">dato = 2</text><rect fill="#FEFECE" filter="url(#f1ewktrogkzgmw)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="104" x="347" y="312"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="354" y="325.1387">nodo3:nodo2e</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="348" x2="450" y1="329.9688" y2="329.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="46" x="353" y="343.251">dato = 3</text><rect fill="#FEFECE" filter="url(#f1ewktrogkzgmw)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="104" x="509" y="312"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="516" y="325.1387">nodo4:nodo2e</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="510" x2="612" y1="329.9688" y2="329.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="46" x="515" y="343.251">dato = 4</text><ellipse cx="338" cy="82" fill="#FEFECE" filter="url(#f1ewktrogkzgmw)" rx="5" ry="5" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30" x="323" y="98.1387">head</text><ellipse cx="529" cy="242.5" fill="#FEFECE" filter="url(#f1ewktrogkzgmw)" rx="5" ry="5" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="31" x="513.5" y="258.6387">None</text><ellipse cx="76" cy="432" fill="#FEFECE" filter="url(#f1ewktrogkzgmw)" rx="5" ry="5" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="31" x="60.5" y="448.1387">None</text><ellipse cx="561" cy="432" fill="#FEFECE" filter="url(#f1ewktrogkzgmw)" rx="5" ry="5" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="31" x="545.5" y="448.1387">None</text><!--MD5=[fae2d7e54e68be42e605d65e150c865b]
+link nodo2e to nodo2e--><path d="M279.856,61.415 C298.346,59.17 314.5,66.031 314.5,82 C314.5,97.969 298.346,104.83 279.856,102.585 " fill="none" id="nodo2e-nodo2e" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[16a638a82f00ec477f42b1aa8575dc87]
+link lista_enlazada2e to nodo2e--><path d="M139.003,82 C157.841,82 177.923,82 195.177,82 " fill="none" id="lista_enlazada2e-&gt;nodo2e" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="200.437,82,191.437,78,195.437,82,191.437,86,200.437,82" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="157.25" y="75.0669">first</text><!--MD5=[16a638a82f00ec477f42b1aa8575dc87]
+link lista_enlazada2e to nodo2e--><path d="M139.132,62.411 C153.657,60.229 168.965,59.556 183.25,62 C187.32,62.696 191.487,63.654 195.623,64.777 " fill="none" id="lista_enlazada2e-&gt;nodo2e-1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="200.456,66.164,192.9079,59.8374,195.6498,64.7853,190.7019,67.5273,200.456,66.164" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="158.25" y="52.0669">last</text><!--MD5=[16a638a82f00ec477f42b1aa8575dc87]
+link lista_enlazada2e to nodo2e--><path d="M139.132,101.589 C153.657,103.771 168.965,104.444 183.25,102 C187.32,101.304 191.487,100.346 195.623,99.223 " fill="none" id="lista_enlazada2e-&gt;nodo2e-2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="200.456,97.836,190.7019,96.4727,195.6498,99.2147,192.9079,104.1626,200.456,97.836" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="157.25" y="98.0669">curr</text><!--MD5=[7393adc795ade451bfdc0ab9624dbf2c]
+link o0lol77231 to o0--><path d="M343.414,82 C354.876,82 366.338,82 377.8,82 " fill="none" id="o0lol77231-o0" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4d51403bc2fc7d13ffa7bbaa59f603f3]
+link o0 to o1--><path d="M442.639,99.086 C422.041,114.419 389.834,137.932 361,157 C273.421,214.917 166.857,277.619 112.188,309.244 " fill="none" id="o0-&gt;o1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="107.702,311.837,117.4958,310.7972,112.0311,309.3353,113.493,303.8706,107.702,311.837" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="239" y="247.0669">first</text><!--MD5=[e6cd0e1f1e9db7227c4049f10bf6c82d]
+link o0 to o4--><path d="M462.296,99.236 C459.748,130.375 457.576,199.926 482,251 C492.954,273.907 513.363,294.043 530.692,308.254 " fill="none" id="o0-&gt;o4" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="535.024,311.737,530.5192,302.9788,531.1283,308.6027,525.5043,309.2119,535.024,311.737" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="483" y="247.0669">last</text><!--MD5=[5e1559455ba02783c1f26c0f4922dd4f]
+link o0 to o0lol77236--><path d="M470.59,99.07 C485.179,134.643 519.532,218.411 527.383,237.556 " fill="none" id="o0-o0lol77236" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="514" y="200.0669">curr</text><!--MD5=[9ad6417c8edb5c87f8a26fa2c4cf4771]
+link o1 to o2--><path d="M127.828,347.4879 C133.984,348.9296 140.222,350.1586 146.25,351 C157.196,352.5279 168.783,351.8057 179.884,349.9283 " fill="none" id="o1-&gt;o2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="184.945,348.9884,175.366,346.6988,180.029,349.9013,176.8265,354.5643,184.945,348.9884" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="18" x="147.25" y="347.0669">sig</text><!--MD5=[f4180513650856ea8a3e68af766673a6]
+link o2 to o1--><path d="M184.994,331 C168.402,331 149.957,331 133.029,331 " fill="none" id="o2-&gt;o1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="127.828,331,136.828,335,132.828,331,136.828,327,127.828,331" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="145.75" y="324.0669">ant</text><!--MD5=[f3390b22645e1719499891abe0a6a76c]
+link o2 to o3--><path d="M289.197,348.9698 C301.83,351.5137 315.341,352.7489 328,351 C332.472,350.3822 337.058,349.5554 341.643,348.5887 " fill="none" id="o2-&gt;o3" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="346.611,347.4882,336.9589,345.5294,341.7293,348.5696,338.6892,353.3401,346.611,347.4882" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="18" x="309" y="347.0669">sig</text><!--MD5=[312d610423a82258d8bb26c42df8299b]
+link o3 to o2--><path d="M346.948,331 C330.191,331 311.53,331 294.409,331 " fill="none" id="o3-&gt;o2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="289.15,331,298.15,335,294.15,331,298.15,327,289.15,331" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="307.5" y="324.0669">ant</text><!--MD5=[ca23d40ed75ad3e9ec0e9aac8c9c3c81]
+link o3 to o4--><path d="M451.389,347.4882 C457.609,348.9298 463.911,350.1588 470,351 C480.977,352.5166 492.596,351.7892 503.727,349.9102 " fill="none" id="o3-&gt;o4" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="508.803,348.9698,499.2247,346.6774,503.8868,349.8812,500.6829,354.5433,508.803,348.9698" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="18" x="471" y="347.0669">sig</text><!--MD5=[9b6ad408577de70e300eece48e33a726]
+link o4 to o3--><path d="M508.948,331 C492.191,331 473.53,331 456.409,331 " fill="none" id="o4-&gt;o3" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="451.15,331,460.15,335,456.15,331,460.15,327,451.15,331" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="469.5" y="324.0669">ant</text><!--MD5=[cd0425b538141d3ff21e10d8b982a91f]
+link o1 to o1lol77245--><path d="M76,350.1581 C76,373.8263 76,413.7347 76,426.754 " fill="none" id="o1-o1lol77245" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="77" y="393.0669">ant</text><!--MD5=[37f4069567c05308a51045c7a5b1a217]
+link o4 to o4lol77248--><path d="M561,350.1581 C561,373.8263 561,413.7347 561,426.754 " fill="none" id="o4-o4lol77248" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="18" x="562" y="393.0669">sig</text><!--MD5=[0975e792483be6874f69c459f504b9b1]
+@startuml
+class lista_enlazada2e{
+    first:nodo
+    last:nodo
+    curr:nodo
+    num_elem:int
+    
+    add(nodo)
+    __str__()
+    borrar(int)
+    __getitem__(int)
+}
+class nodo2e{
+    dato : int
+    sig : nodo
+    ant : nodo
+    
+    nodo(int)
+    add(nodo)
+    __str__()
+    borrar(int)
+}
+
+nodo2e - - nodo2e
+lista_enlazada2e -> nodo2e: first
+lista_enlazada2e -> nodo2e: last
+lista_enlazada2e -> nodo2e: curr
+
+object "centinela:lista_enlazada2e" as o0
+object "nodo1:nodo2e" as o1
+o1 : dato = 1
+object "nodo2:nodo2e" as o2
+o2 : dato = 2
+object "nodo3:nodo2e" as o3
+o3 : dato = 3
+object "nodo4:nodo2e" as o4
+o4 : dato = 4
+
+head ()- o0
+o0 - - -> o1:first
+o0 - - -> o4:last
+o0 - -() None :curr
+o1 -> o2:sig
+o2 -> o1:ant
+o2 -> o3:sig
+o3 -> o2:ant
+o3 -> o4:sig
+o4 -> o3:ant
+o1 - -() None : ant
+o4 - -() None : sig
+@enduml
+
+PlantUML version 1.2020.16beta1(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Ejemplo-de-clase-nodo-con-dos-referencias-o-enlaces-(nodo2e)-en-Python">Ejemplo de clase nodo con dos referencias o enlaces (nodo2e) en Python<a class="anchor-link" href="#Ejemplo-de-clase-nodo-con-dos-referencias-o-enlaces-(nodo2e)-en-Python">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">nodo2e</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dato</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dato</span> <span class="o">=</span> <span class="n">dato</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sig</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ant</span> <span class="o">=</span> <span class="kc">None</span>
+        
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nuevo</span><span class="p">):</span>
+        <span class="k">pass</span>
+    
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sig</span> <span class="o">==</span> <span class="kc">None</span><span class="p">):</span>
+            <span class="k">return</span> <span class="s2">&quot;(</span><span class="si">{}</span><span class="s2">)-&gt;(None)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dato</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="s2">&quot;(</span><span class="si">{0}</span><span class="s2">)-&gt;</span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dato</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sig</span><span class="p">))</span>
+    
+    <span class="k">def</span> <span class="nf">borrar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">elem</span><span class="p">):</span>  
+        <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dato</span> <span class="o">==</span> <span class="n">elem</span><span class="p">):</span>
+            <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ant</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">ant</span><span class="o">.</span><span class="n">sig</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sig</span>
+            <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sig</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sig</span><span class="o">.</span><span class="n">ant</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ant</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sig</span> <span class="o">==</span> <span class="kc">None</span><span class="p">):</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sig</span><span class="o">.</span><span class="n">borrar</span><span class="p">(</span><span class="n">elem</span><span class="p">)</span>
+        
+
+        
+        
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Ejemplo-de-clase-para-una-lista-doblemente-enlazada-(-lista_enlazada2e)-en-Python">Ejemplo de clase para una lista doblemente enlazada ( lista_enlazada2e) en Python<a class="anchor-link" href="#Ejemplo-de-clase-para-una-lista-doblemente-enlazada-(-lista_enlazada2e)-en-Python">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">lista_enlazada2e</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">first</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># siempre la referencia al primero</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">last</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># siempre la referencia al ultimo</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">curr</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># a partir de esta referencia moverse en la lista</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_elem</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># cantidad de elementos en la lista</span>
+        
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nuevo</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">first</span> <span class="o">==</span> <span class="kc">None</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">first</span> <span class="o">=</span> <span class="n">nuevo</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">last</span> <span class="o">=</span> <span class="n">nuevo</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1">#hacer que el ultimo apunte a este nuevo nodo</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">last</span><span class="o">.</span><span class="n">sig</span> <span class="o">=</span> <span class="n">nuevo</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">last</span><span class="o">.</span><span class="n">sig</span><span class="o">.</span><span class="n">ant</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">last</span>
+        
+            <span class="c1">#hacer que la referencia last apunte al nuevo nodo</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">last</span> <span class="o">=</span> <span class="n">nuevo</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_elem</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># recorrer e imprimir</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">first</span><span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">borrar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">elem</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">first</span><span class="o">.</span><span class="n">borrar</span><span class="p">(</span><span class="n">elem</span><span class="p">)</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">num_elem</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">return</span> <span class="mi">1</span>
+    
+    <span class="c1"># ejemplo de uso de la referencia curr sobrecargando []</span>
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">type</span><span class="p">(</span><span class="nb">int</span><span class="p">())):</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Index must be integer.&quot;</span><span class="p">)</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_elem</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Index out of range.&quot;</span><span class="p">)</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Index must be positive or zero.&quot;</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">first</span>
+        <span class="n">curr_idx</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">curr_idx</span> <span class="o">!=</span> <span class="n">index</span><span class="p">):</span>
+            <span class="n">curr_idx</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">curr</span><span class="o">.</span><span class="n">sig</span>
+            
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">curr</span><span class="o">.</span><span class="n">dato</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Ejemplo-de-uso-de-la-lista-doblemente-enlazada.">Ejemplo de uso de la lista doblemente enlazada.<a class="anchor-link" href="#Ejemplo-de-uso-de-la-lista-doblemente-enlazada.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># construcción y llenado de la lista</span>
+<span class="n">head</span> <span class="o">=</span> <span class="n">lista_enlazada2e</span><span class="p">()</span>
+<span class="n">head</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nodo2e</span><span class="p">(</span><span class="s2">&quot;d1&quot;</span><span class="p">))</span>
+<span class="n">head</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nodo2e</span><span class="p">(</span><span class="s2">&quot;d2&quot;</span><span class="p">))</span>
+<span class="n">head</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nodo2e</span><span class="p">(</span><span class="s2">&quot;d3&quot;</span><span class="p">))</span>
+<span class="n">head</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nodo2e</span><span class="p">(</span><span class="s2">&quot;d4&quot;</span><span class="p">))</span>
+<span class="n">head</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nodo2e</span><span class="p">(</span><span class="s2">&quot;d5&quot;</span><span class="p">))</span>
+<span class="n">head</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nodo2e</span><span class="p">(</span><span class="s2">&quot;d6&quot;</span><span class="p">))</span>
+
+<span class="c1"># uso del método sobrecargado str() y el borrado</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">head</span><span class="p">))</span>
+<span class="n">head</span><span class="o">.</span><span class="n">borrar</span><span class="p">(</span><span class="s2">&quot;d4&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">head</span><span class="p">))</span>
+
+<span class="n">head</span><span class="o">.</span><span class="n">borrar</span><span class="p">(</span><span class="s2">&quot;d6&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">head</span><span class="p">))</span>
+
+<span class="n">head</span><span class="o">.</span><span class="n">borrar</span><span class="p">(</span><span class="s2">&quot;d1&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">head</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(d1)-&gt;(d2)-&gt;(d3)-&gt;(d4)-&gt;(d5)-&gt;(d6)-&gt;(None)
+(d1)-&gt;(d2)-&gt;(d3)-&gt;(d5)-&gt;(d6)-&gt;(None)
+(d1)-&gt;(d2)-&gt;(d3)-&gt;(d5)-&gt;(None)
+(d1)-&gt;(d2)-&gt;(d3)-&gt;(d5)-&gt;(None)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Lista-Circular">Lista Circular<a class="anchor-link" href="#Lista-Circular">&#182;</a></h3><p>Una lista circular es aquella cuya principal características es no tener enlaces/referencias vacias o nulas. esta lista puede ser tanto simple como doblemente enlazada y para evitar los enlaces/referencias nulas, la referencia <em>sig</em> del último elemento apuntará al primero (en el caso de una lista enlazada simple), formandose una cadena de referencias "circulares". En el caso de una lista doblemente enlazada, debemos además tener la precaución que la referencia <em>ant</em> del primer elemento, apunte al último elemento de la lista.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"> </div>
+
+
+<div class="output_svg output_subarea output_execute_result">
+<svg contentScriptType="application/ecmascript" contentStyleType="text/css" height="499px" preserveAspectRatio="none" style="width:575px;height:499px;" version="1.1" viewBox="0 0 575 499" width="575px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"><defs><filter height="300%" id="f1qf4kyex6pwtz" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[98c888a35feba47b0631b8bc017228bf]
+class lista_enlazada_c--><rect fill="#FEFECE" filter="url(#f1qf4kyex6pwtz)" height="150.4375" id="lista_enlazada_c" style="stroke: #A80036; stroke-width: 1.5;" width="129" x="22.5" y="7"/><ellipse cx="37.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M39.8438,18.6719 C38.9063,18.2344 38.3125,18.0938 37.4375,18.0938 C34.8125,18.0938 32.8125,20.1719 32.8125,22.8906 L32.8125,24.0156 C32.8125,26.5938 34.9219,28.4844 37.8125,28.4844 C39.0313,28.4844 40.1875,28.1875 40.9375,27.6406 C41.5156,27.2344 41.8438,26.7813 41.8438,26.3906 C41.8438,25.9375 41.4531,25.5469 40.9844,25.5469 C40.7656,25.5469 40.5625,25.625 40.375,25.8125 C39.9219,26.2969 39.9219,26.2969 39.7344,26.3906 C39.3125,26.6563 38.625,26.7813 37.8594,26.7813 C35.8125,26.7813 34.5156,25.6875 34.5156,23.9844 L34.5156,22.8906 C34.5156,21.1094 35.7656,19.7969 37.5,19.7969 C38.0781,19.7969 38.6875,19.9531 39.1563,20.2031 C39.6406,20.4844 39.8125,20.7031 39.9063,21.1094 C39.9688,21.5156 40,21.6406 40.1406,21.7656 C40.2813,21.9063 40.5156,22.0156 40.7344,22.0156 C41,22.0156 41.2656,21.875 41.4375,21.6563 C41.5469,21.5 41.5781,21.3125 41.5781,20.8906 L41.5781,19.4688 C41.5781,19.0313 41.5625,18.9063 41.4688,18.75 C41.3125,18.4844 41.0313,18.3438 40.7344,18.3438 C40.4375,18.3438 40.2344,18.4375 40.0156,18.75 L39.8438,18.6719 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="97" x="51.5" y="27.1543">lista_enlazada_c</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="23.5" x2="150.5" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="28.5" y="53.2104">first:nodo</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="28.5" y="66.0151">last:nodo</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="28.5" y="78.8198">curr:nodo</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78" x="28.5" y="91.6245">num_elem:int</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="23.5" x2="150.5" y1="98.2188" y2="98.2188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="28.5" y="112.4292">add(nodo)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="28.5" y="125.2339">__str__()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="28.5" y="138.0386">borrar(int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91" x="28.5" y="150.8433">__getitem__(int)</text><!--MD5=[f4703b07101ef2cb542814d59c45a2bb]
+class nodo_c--><rect fill="#FEFECE" filter="url(#f1qf4kyex6pwtz)" height="124.8281" id="nodo_c" style="stroke: #A80036; stroke-width: 1.5;" width="76" x="213" y="19.5"/><ellipse cx="228" cy="35.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M230.3438,31.1719 C229.4063,30.7344 228.8125,30.5938 227.9375,30.5938 C225.3125,30.5938 223.3125,32.6719 223.3125,35.3906 L223.3125,36.5156 C223.3125,39.0938 225.4219,40.9844 228.3125,40.9844 C229.5313,40.9844 230.6875,40.6875 231.4375,40.1406 C232.0156,39.7344 232.3438,39.2813 232.3438,38.8906 C232.3438,38.4375 231.9531,38.0469 231.4844,38.0469 C231.2656,38.0469 231.0625,38.125 230.875,38.3125 C230.4219,38.7969 230.4219,38.7969 230.2344,38.8906 C229.8125,39.1563 229.125,39.2813 228.3594,39.2813 C226.3125,39.2813 225.0156,38.1875 225.0156,36.4844 L225.0156,35.3906 C225.0156,33.6094 226.2656,32.2969 228,32.2969 C228.5781,32.2969 229.1875,32.4531 229.6563,32.7031 C230.1406,32.9844 230.3125,33.2031 230.4063,33.6094 C230.4688,34.0156 230.5,34.1406 230.6406,34.2656 C230.7813,34.4063 231.0156,34.5156 231.2344,34.5156 C231.5,34.5156 231.7656,34.375 231.9375,34.1563 C232.0469,34 232.0781,33.8125 232.0781,33.3906 L232.0781,31.9688 C232.0781,31.5313 232.0625,31.4063 231.9688,31.25 C231.8125,30.9844 231.5313,30.8438 231.2344,30.8438 C230.9375,30.8438 230.7344,30.9375 230.5156,31.25 L230.3438,31.1719 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="44" x="242" y="39.6543">nodo_c</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="214" x2="288" y1="51.5" y2="51.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="219" y="65.7104">dato : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="219" y="78.5151">sig : nodo</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="214" x2="288" y1="85.1094" y2="85.1094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="219" y="99.3198">nodo(int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="219" y="112.1245">add(nodo)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="219" y="124.9292">__str__()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="219" y="137.7339">borrar(int)</text><rect fill="#FEFECE" filter="url(#f1qf4kyex6pwtz)" height="33.9688" style="stroke: #A80036; stroke-width: 1.5;" width="169" x="387.5" y="65"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="155" x="394.5" y="78.1387">centinela:lista_enlazada_c</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="388.5" x2="555.5" y1="82.9688" y2="82.9688"/><rect fill="#FEFECE" filter="url(#f1qf4kyex6pwtz)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="100" x="7" y="328"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="86" x="14" y="341.1387">nodo1:nodo_c</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="106" y1="345.9688" y2="345.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="46" x="13" y="359.251">dato = 1</text><rect fill="#FEFECE" filter="url(#f1qf4kyex6pwtz)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="101" x="161.5" y="328"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="87" x="168.5" y="341.1387">nodo2:nodo_c</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="162.5" x2="261.5" y1="345.9688" y2="345.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="45" x="167.5" y="359.251">dato = 2</text><rect fill="#FEFECE" filter="url(#f1qf4kyex6pwtz)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="101" x="317.5" y="328"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="87" x="324.5" y="341.1387">nodo3:nodo_c</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="318.5" x2="417.5" y1="345.9688" y2="345.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="46" x="323.5" y="359.251">dato = 3</text><rect fill="#FEFECE" filter="url(#f1qf4kyex6pwtz)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="101" x="317.5" y="443"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="87" x="324.5" y="456.1387">nodo4:nodo_c</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="318.5" x2="417.5" y1="460.9688" y2="460.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="46" x="323.5" y="474.251">dato = 4</text><ellipse cx="347" cy="82" fill="#FEFECE" filter="url(#f1qf4kyex6pwtz)" rx="5" ry="5" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30" x="332" y="98.1387">head</text><ellipse cx="530" cy="242.5" fill="#FEFECE" filter="url(#f1qf4kyex6pwtz)" rx="5" ry="5" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="31" x="514.5" y="258.6387">None</text><!--MD5=[2aaa2ba7eaa9e8c7c975b8f680956967]
+link nodo_c to nodo_c--><path d="M289.308,61.513 C307.734,58.983 324,65.812 324,82 C324,98.188 307.734,105.017 289.308,102.487 " fill="none" id="nodo_c-nodo_c" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3cdff45f7698e0ddcf5fee1d468ff8f6]
+link lista_enlazada_c to nodo_c--><path d="M151.817,82 C170.479,82 190.384,82 207.428,82 " fill="none" id="lista_enlazada_c-&gt;nodo_c" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="212.62,82,203.62,78,207.62,82,203.62,86,212.62,82" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="169.75" y="75.0669">first</text><!--MD5=[3cdff45f7698e0ddcf5fee1d468ff8f6]
+link lista_enlazada_c to nodo_c--><path d="M151.662,62.458 C166.16,60.208 181.474,59.496 195.75,62 C199.706,62.694 203.753,63.648 207.768,64.765 " fill="none" id="lista_enlazada_c-&gt;nodo_c-1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="212.828,66.26,205.3293,59.8749,208.0327,64.844,203.0636,67.5474,212.828,66.26" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="170.75" y="52.0669">last</text><!--MD5=[3cdff45f7698e0ddcf5fee1d468ff8f6]
+link lista_enlazada_c to nodo_c--><path d="M151.662,101.542 C166.16,103.792 181.474,104.504 195.75,102 C199.706,101.306 203.753,100.352 207.768,99.235 " fill="none" id="lista_enlazada_c-&gt;nodo_c-2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="212.828,97.74,203.0636,96.4526,208.0327,99.156,205.3293,104.1251,212.828,97.74" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="169.75" y="98.0669">curr</text><!--MD5=[e84d15119494fb3005d987cb9ca700e8]
+link o0lol94172 to o0--><path d="M352.371,82 C364.054,82 375.736,82 387.419,82 " fill="none" id="o0lol94172-o0" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4d51403bc2fc7d13ffa7bbaa59f603f3]
+link o0 to o1--><path d="M450.88,99.126 C430.506,114.488 398.628,138.021 370,157 C272.286,221.781 152.653,291.46 93.5848,325.254 " fill="none" id="o0-&gt;o1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="89.0931,327.821,98.8916,326.8268,93.4338,325.3394,94.9212,319.8816,89.0931,327.821" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="248" y="247.0669">first</text><!--MD5=[e6cd0e1f1e9db7227c4049f10bf6c82d]
+link o0 to o4--><path d="M472.646,99.002 C473.875,143.213 473.626,270.099 436,366 C425.187,393.5597 404.599,420.5754 388.897,438.7082 " fill="none" id="o0-&gt;o4" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="385.425,442.6663,394.3672,438.5388,388.7224,438.9077,388.3535,433.2629,385.425,442.6663" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="460" y="294.0669">last</text><!--MD5=[25873f49a252ddea8c9c96d940ec84a2]
+link o0 to o0lol94177--><path d="M477.881,99.07 C490.898,134.643 521.551,218.411 528.557,237.556 " fill="none" id="o0-o0lol94177" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="516" y="200.0669">curr</text><!--MD5=[9ad6417c8edb5c87f8a26fa2c4cf4771]
+link o1 to o2--><path d="M107.324,347 C122.89,347 140.131,347 156.053,347 " fill="none" id="o1-&gt;o2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="161.398,347,152.398,343,156.398,347,152.398,351,161.398,347" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="18" x="125.25" y="340.0669">sig</text><!--MD5=[f3390b22645e1719499891abe0a6a76c]
+link o2 to o3--><path d="M262.649,347 C278.395,347 295.844,347 311.937,347 " fill="none" id="o2-&gt;o3" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="317.339,347,308.339,343,312.339,347,308.339,351,317.339,347" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="18" x="281" y="340.0669">sig</text><!--MD5=[ca23d40ed75ad3e9ec0e9aac8c9c3c81]
+link o3 to o4--><path d="M368,366.155 C368,385.595 368,416.5012 368,437.7174 " fill="none" id="o3-&gt;o4" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="368,442.8897,372,433.8897,368,437.8897,364,433.8897,368,442.8897" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="18" x="369" y="409.0669">sig</text><!--MD5=[69ef053b995dc45eee6b21b436a356d4]
+link o4 to o1--><path d="M318.297,442.9407 C261.801,422.4131 169.87,389.0105 111.467,367.79 " fill="none" id="o4-&gt;o1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="106.6228,366.03,113.7158,372.863,111.3222,367.7375,116.4477,365.3439,106.6228,366.03" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="18" x="232" y="409.0669">sig</text><!--MD5=[76c62ea89e3ca94a50122e265838ad10]
+@startuml
+class lista_enlazada_c{
+    first:nodo
+    last:nodo
+    curr:nodo
+    num_elem:int
+    
+    add(nodo)
+    __str__()
+    borrar(int)
+    __getitem__(int)
+}
+class nodo_c{
+    dato : int
+    sig : nodo
+    
+    nodo(int)
+    add(nodo)
+    __str__()
+    borrar(int)
+}
+
+nodo_c - - nodo_c
+lista_enlazada_c -> nodo_c: first
+lista_enlazada_c -> nodo_c: last
+lista_enlazada_c -> nodo_c: curr
+
+object "centinela:lista_enlazada_c" as o0
+object "nodo1:nodo_c" as o1
+o1 : dato = 1
+object "nodo2:nodo_c" as o2
+o2 : dato = 2
+object "nodo3:nodo_c" as o3
+o3 : dato = 3
+object "nodo4:nodo_c" as o4
+o4 : dato = 4
+
+head ()- o0
+o0 - - -> o1:first
+o0 - - -> o4:last
+o0 - -() None :curr
+o1 -> o2:sig
+o2 -> o3:sig
+o3 - -> o4:sig
+o4 -> o1:sig
+@enduml
+
+PlantUML version 1.2020.16beta1(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Tarea">Tarea<a class="anchor-link" href="#Tarea">&#182;</a></h2><p>Realice la implementación de la lista enlazada circular, tomando como base los ejemplos proporcionados.</p>
+
+</div>
+</div>
 </div>
     </div>
   </div>
